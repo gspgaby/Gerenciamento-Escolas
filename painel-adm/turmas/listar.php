@@ -74,7 +74,6 @@ function editar(id, escola, turma, turno, capacidade){
 
 function limparCampos(){
 	$('#id').val('');
-	$('#<?=$campo1?>').val('');
 	$('#<?=$campo2?>').val('');
 	$('#<?=$campo3?>').val('');
 

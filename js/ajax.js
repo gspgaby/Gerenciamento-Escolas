@@ -37,6 +37,8 @@ $("#form").submit(function () {
             $('#mensagem').text('');
 			$('#mensagem').removeClass()
 			if (mensagem.trim() == "Salvo com Sucesso") {
+                    //$('#nome').val('');
+                    //$('#cpf').val('');
                     $('#btn-fechar').click();
                     listar();
                 } else {

@@ -46,7 +46,7 @@ if(@$_GET['pag'] == ""){
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php?pag=<?php echo $menu1 ?>">SME-RJ</a>
+    <a class="navbar-brand" href="index.php?pag=<?php echo $menu2 ?>">SME-RJ</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -55,29 +55,21 @@ if(@$_GET['pag'] == ""){
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu1 ?>">Home</a>
 					</li>
-					
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Cadastrar
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="index.php?pag=<?php echo $menu2 ?>">Escolas</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="index.php?pag=<?php echo $menu3 ?>">Turmas</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="index.php?pag=<?php echo $menu4 ?>">Usuários</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="index.php?pag=<?php echo $menu5 ?>">Níveis</a>
-              </li>
-            </ul>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu2 ?>">Escolas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu3 ?>">Turmas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu4 ?>">Usuários</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu5 ?>">Níveis</a>
 					</li>
 				</ul>
 				<div class="d-flex mr-4">					
-          <a class="btn btn-outline-borderless" href="../logout.php">Sair</a>		
+          <a class="btn btn-primary" href="../logout.php">Sair</a>		
 				</div>
 			</div>
 		</div>

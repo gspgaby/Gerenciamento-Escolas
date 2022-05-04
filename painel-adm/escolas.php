@@ -64,7 +64,7 @@ require_once($pagina."/campos.php");
 			</div>
 			<form id="form-excluir" method="post">
 				<div class="modal-body">
-					Deseja Realmente excluir este Registro: <span id="escola-excluida"></span>?
+					Deseja Realmente excluir este Registro?
 					<small><div id="mensagem-excluir" align="center"></div></small>
 					<input type="hidden" class="form-control" name="id-excluir"  id="id-excluir">
 				</div>

@@ -7,10 +7,8 @@ $cp2 = $_POST[$campo2];
 $cp3 = $_POST[$campo3];
 $cp4 = $_POST[$campo4];
 
-$id = @$_POST['id'];
-
 //VALIDAR CAMPO
-$query = $pdo->query("SELECT * from $pagina where turma = '$cp2'");
+$query = $pdo->query("SELECT * from $pagina where turma = '$cp2' and escola = '$cp1'");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res);
 $id_reg = @$res[0]['id'];
@@ -18,6 +16,8 @@ if($total_reg > 0 and $id_reg != $id){
 	echo 'Este registro já está cadastrado!!';
 	exit();
 }
+
+$id = $_POST['id'];
 
 if($id == ""){
 	$query = $pdo->prepare("INSERT INTO $pagina set escola = :campo1, turma = :campo2, turno = :campo3, capacidade = :campo4");
