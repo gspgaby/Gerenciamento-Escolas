@@ -13,12 +13,11 @@ $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res); 
 
 if($total_reg > 0) {
-  $nivel = $res[0]['nivel'];
+  $nivel = @$res[0]['nivel'];
   //VARIAVEIS DE SESSÃO
-  $_SESSION['nivel_usuario'] = $res[0]['nivel'];
-  $_SESSION['id_usuario'] = $res[0]['id_usuario'];
-  $_SESSION['nome_usuario'] = $res[0]['nome'];
-
+  $_SESSION['nivel_usuario'] = @$res[0]['nivel'];
+  $_SESSION['id_usuario'] = @$res[0]['id_usuario'];
+  $_SESSION['nome_usuario'] = @$res[0]['nome'];
 
    if($nivel == 'Administrador'){
      echo "<script>window.location='painel-adm'</script>";

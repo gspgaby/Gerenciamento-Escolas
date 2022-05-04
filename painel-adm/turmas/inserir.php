@@ -10,7 +10,7 @@ $cp4 = $_POST[$campo4];
 $id = @$_POST['id'];
 
 //VALIDAR CAMPO
-$query = $pdo->query("SELECT * from $pagina where turma = escola = '$cp1' and turma = '$cp2'");
+$query = $pdo->query("SELECT * from $pagina where turma = '$cp2'");
 $res = $query->fetchAll(PDO::FETCH_ASSOC);
 $total_reg = @count($res);
 $id_reg = @$res[0]['id'];

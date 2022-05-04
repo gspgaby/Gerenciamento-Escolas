@@ -12,7 +12,6 @@ $email_usuario = @$res[0]['email'];
 $senha_usuario = @$res[0]['senha'];
 $nivel_usuario = @$res[0]['nivel'];
 
-
 //MENUS DO PAINEL
 $menu1 = 'home';
 $menu2 = 'escolas';
