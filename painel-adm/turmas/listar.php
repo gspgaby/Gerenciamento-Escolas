@@ -35,7 +35,7 @@ echo <<<HTML
 	<td>{$cp3}</td>	
 	<td>{$cp4}</td>									
 	<td>
-	<a href="#" onclick="editar('{$id}', '{$cp1}', '{$cp2}', '{$cp3}', '{$cp4}')" title="Editar Registro">	<i class="bi bi-pencil-square text-primary"></i> </a>
+	<a href="#" onclick="editar('{$id}', '{$cp1}', '{$cp2}', '{$cp3}', '{$cp4}')" title="Editar Registro"><i class="bi bi-pencil-square"></i></a>
 	<a href="#" onclick="excluir('{$id}' , '{$cp1}')" title="Excluir Registro"><i class="bi bi-trash-fill"></i></a>
 	</td>
 	</tr>

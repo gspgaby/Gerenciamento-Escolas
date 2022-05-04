@@ -4,9 +4,7 @@ require_once("verificar.php");
 $pagina = 'turmas';
 
 require_once($pagina."/campos.php");
-
 ?>
-
 <div class="col-md-12 my-3">
 	<a href="#" onclick="inserir()" type="button" class="btn btn-primary btn-sm">Nova Turma</a>
 </div>
@@ -16,8 +14,6 @@ require_once($pagina."/campos.php");
 
 	</div>
 </small>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -41,7 +37,6 @@ require_once($pagina."/campos.php");
 								  $nome_item = $res[$i]['escola'];
 								?>
 								<option value="<?php echo $nome_item ?>"><?php echo $nome_item ?></option>
-
 							<?php } ?>
 						</select>
 					</div>
@@ -63,13 +58,10 @@ require_once($pagina."/campos.php");
             </label>
 						<input type="text" class="form-control" name="<?php echo $campo4 ?>" placeholder="<?php echo $campo4 ?>" id="<?php echo $campo4 ?>" required>
 					</div>
-					
 				</div>	
-
 					<small>
             <div id="mensagem" align="center"></div>
           </small>
-
 					<input type="hidden" class="form-control" name="id"  id="id">
 				</div>
 				<div class="modal-footer">
@@ -81,9 +73,6 @@ require_once($pagina."/campos.php");
 	</div>
 </div>
 
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="modalExcluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -94,14 +83,9 @@ require_once($pagina."/campos.php");
 			</div>
 			<form id="form-excluir" method="post">
 				<div class="modal-body">
-
 					Deseja Realmente excluir este Registro: <span id="nome-excluido"></span>?
-
 					<small><div id="mensagem-excluir" align="center"></div></small>
-
 					<input type="hidden" class="form-control" name="id-excluir"  id="id-excluir">
-
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-fechar-excluir">Fechar</button>
@@ -111,7 +95,6 @@ require_once($pagina."/campos.php");
 		</div>
 	</div>
 </div>
-
 
 <script type="text/javascript">var pag = "<?=$pagina?>"</script>
 <script src="../js/ajax.js"></script>

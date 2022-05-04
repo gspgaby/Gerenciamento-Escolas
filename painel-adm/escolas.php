@@ -17,8 +17,6 @@ require_once($pagina."/campos.php");
 	</div>
 </small>
 
-
-
 <!-- Modal -->
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -44,12 +42,8 @@ require_once($pagina."/campos.php");
 						<label for="exampleFormControlInput1" class="form-label"><?php echo $campo3 ?></label>
 						<input type="text" class="form-control" name="<?php echo $campo3 ?>" placeholder="<?php echo $campo3 ?>" id="<?php echo $campo3 ?>" required>
 					</div>
-
 					<small><div id="mensagem" align="center"></div></small>
-
 					<input type="hidden" class="form-control" name="id"  id="id">
-
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-fechar">Fechar</button>
@@ -59,7 +53,6 @@ require_once($pagina."/campos.php");
 		</div>
 	</div>
 </div>
-
 
 <!-- Modal -->
 <div class="modal fade" id="modalExcluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -71,14 +64,9 @@ require_once($pagina."/campos.php");
 			</div>
 			<form id="form-excluir" method="post">
 				<div class="modal-body">
-
 					Deseja Realmente excluir este Registro: <span id="escola-excluida"></span>?
-
 					<small><div id="mensagem-excluir" align="center"></div></small>
-
 					<input type="hidden" class="form-control" name="id-excluir"  id="id-excluir">
-
-
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-fechar-excluir">Fechar</button>
@@ -88,7 +76,6 @@ require_once($pagina."/campos.php");
 		</div>
 	</div>
 </div>
-
 
 <script type="text/javascript">var pag = "<?=$pagina?>"</script>
 <script src="../js/ajax.js"></script>
