@@ -1,5 +1,5 @@
 <h2 align="center">
-  Desafio Economapas
+  Projeto Gerenciador de Escolas
 </h2>
 
 ## 🚀 Objetivo
