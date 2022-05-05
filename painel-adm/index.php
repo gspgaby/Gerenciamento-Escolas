@@ -13,11 +13,10 @@ $senha_usuario = @$res[0]['senha'];
 $nivel_usuario = @$res[0]['nivel'];
 
 //MENUS DO PAINEL
-$menu1 = 'home';
-$menu2 = 'escolas';
-$menu3 = 'turmas';
-$menu4 = 'usuarios';
-$menu5 = 'niveis';
+$menu1 = 'escolas';
+$menu2 = 'turmas';
+$menu3 = 'usuarios';
+$menu4 = 'niveis';
 
 
 if(@$_GET['pag'] == ""){
@@ -53,24 +52,31 @@ if(@$_GET['pag'] == ""){
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu1 ?>">Home</a>
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu1 ?>">Escolas</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu2 ?>">Escolas</a>
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu2 ?>">Turmas</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu3 ?>">Turmas</a>
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu3 ?>">Usuários</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu4 ?>">Usuários</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu5 ?>">Níveis</a>
+						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu4 ?>">Níveis</a>
 					</li>
 				</ul>
-				<div class="d-flex mr-4">					
-          <a class="btn btn-primary" href="../logout.php">Sair</a>		
-				</div>
+				<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<?php echo @$nome_usuario; ?>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil">Editar Dados</a></li>
+
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="../logout.php">Sair</a></li>
+							</ul>
+						</li>
+					</ul>
 			</div>
 		</div>
 	</nav>
