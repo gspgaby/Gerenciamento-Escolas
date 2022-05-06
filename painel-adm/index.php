@@ -45,7 +45,7 @@ if(@$_GET['pag'] == ""){
   <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php?pag=<?php echo $menu2 ?>">SME-RJ</a>
+    <a class="navbar-brand" href="index.php?pag=<?php echo $menu1 ?>">SME-RJ</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -64,19 +64,9 @@ if(@$_GET['pag'] == ""){
 						<a class="nav-link active" aria-current="page" href="index.php?pag=<?php echo $menu4 ?>">Níveis</a>
 					</li>
 				</ul>
-				<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<?php echo @$nome_usuario; ?>
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalPerfil">Editar Dados</a></li>
-
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="../logout.php">Sair</a></li>
-							</ul>
-						</li>
-					</ul>
+				<div class="d-flex mr-4">					
+          <a class="btn btn-primary" href="../logout.php">Sair</a>		
+				</div>
 			</div>
 		</div>
 	</nav>

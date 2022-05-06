@@ -43,6 +43,8 @@ php -S localhost:8080
 
 - Acesse http://localhost:8080 no seu navagador;
 
+- App hospedado: http://gerenciador.42web.io/
+
 # Autora
 
 - [Gabriella dos Santos Pereira](https://github.com/gspgaby)

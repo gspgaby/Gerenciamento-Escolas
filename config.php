@@ -3,8 +3,11 @@ $nome_sistema = 'SME - GERENCIADOR DE ESCOLAS';
 $nome_adm = 'Gabriella dos Santos Pereira';
 $email_adm = 'gspgaby@gmail.com';
 
-$servidor = 'us-cdbr-east-05.cleardb.net';
-$usuario = 'b3bc11dbd0a597';
-$senha = '63964358';
-$banco = 'heroku_93153fe78153306';
+//Foi incluida uma configuração generica para um banco de dados local o banco local, 
+//o banco na nuvem tem variaveis de ambientes diferentes.
+
+$servidor = 'localhost';
+$usuario = 'root';
+$senha = '';
+$banco = 'gerenciador';
 ?>
